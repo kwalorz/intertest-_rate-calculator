@@ -4,15 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
     <title>Interest Rate Calculator</title>
   </head>
   <body>
-    <form action="">
-      <select
-        name="credit_score"
-        id="credit_score"
-        placeholder="What is your credit score?"
-      >
+    <form id="interest_calculator" action="" method="POST">
+      <label for="credit_score">What is your credit score?</label>
+      <select name="credit_score" id="credit_score">
         <option value="300-579">300-579</option>
         <option value="580-699">580-699</option>
         <option value="700-749">700-749</option>
@@ -23,7 +22,7 @@
         type="text"
         id="vehicle-value"
         name="vehicle-value"
-        placeholder="enter value here"
+        placeholder="Enter value here"
       />
       <label for="down_payment">Do you plan on doing a down payment?</label>
       <input
@@ -32,7 +31,7 @@
         name="down_payment"
         placeholder="How much?"
       />
-      <button type="submit">Submit</button>
+      <button id="generate_quote">Get my estimate!</button>
     </form>
   </body>
 </html>
