@@ -3,26 +3,39 @@
   padding: 0;
 }
 
-#interest_calculator {
+#payment_calculator {
   width: 500px;
   display: flex;
   flex-direction: column;
 }
 
-#interest_calculator > * {
+#payment_calculator > * {
   margin: 0.3rem;
   padding: 0.5rem;
 }
 
-#interest_calculator select {
+#payment_calculator select {
   width: 25%;
 }
 
-#interest_calculator button {
+#payment_calculator button {
   margin: 1.5rem auto;
   width: 25%;
   border-radius: 5px;
   border: none;
   background-color: navy;
   color: #fff;
+  cursor: pointer;
+}
+
+#payment_calculator h2 {
+  margin: 0 auto 0.8rem;
+}
+#payment_calculator .payment_quote {
+  width: 100px;
+  height: 50px;
+  margin: auto;
+  border: #000 2px solid;
+  font-weight: 700;
+  font-size: 2.5rem;
 }

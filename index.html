@@ -9,8 +9,8 @@
     <title>Interest Rate Calculator</title>
   </head>
   <body>
-    <form id="interest_calculator" action="" method="POST">
-      <label for="credit_score">What is your credit score?</label>
+    <form id="payment_calculator">
+      <label for="credit_score">What is your estimated credit score?</label>
       <select name="credit_score" id="credit_score">
         <option value="300-579">300-579</option>
         <option value="580-699">580-699</option>
@@ -22,7 +22,7 @@
         type="text"
         id="vehicle-value"
         name="vehicle-value"
-        placeholder="Enter value here"
+        placeholder="e.g  70000"
       />
       <label for="down_payment">Do you plan on doing a down payment?</label>
       <input
@@ -31,7 +31,23 @@
         name="down_payment"
         placeholder="How much?"
       />
+      <label for="trade">Trading in a vehicle?</label>
+      <input
+        type="text"
+        id="trade"
+        name="trade"
+        placeholder="What is the estimated value?"
+      />
+      <label for="lease_length">Pick a Lease Term</label>
+      <select name="lease_length" id="lease_length">
+        <option value="12">12 Months</option>
+        <option value="24">24 Months</option>
+        <option value="36">36 Months</option>
+        <option value="48">48 Months</option>
+      </select>
       <button id="generate_quote">Get my estimate!</button>
+      <h2>Your estimated car payment!</h2>
+      <div class="payment_quote"></div>
     </form>
   </body>
 </html>
