@@ -18,6 +18,11 @@
         <option value="750-850">750-850</option>
       </select>
       <label for="vehicle-value">What is the price of your new vehicle?</label>
+      <div class="no_entry-message"></div>
+      <div class="error-message">
+        *The value you have entered is invalid. Must contain no special
+        characters, letters, and be a positive number
+      </div>
       <input
         type="text"
         id="vehicle-value"
@@ -25,6 +30,11 @@
         placeholder="e.g  70000"
       />
       <label for="down_payment">Do you plan on doing a down payment?</label>
+      <div class="no_entry-message"></div>
+      <div class="error-message">
+        *The down payment you have entered is invalid. Must contain no special
+        characters, letters, and be a positive number
+      </div>
       <input
         type="text"
         id="down_payment"
@@ -32,6 +42,11 @@
         placeholder="How much?"
       />
       <label for="trade">Trading in a vehicle?</label>
+      <div class="no_entry-message"></div>
+      <div class="error-message">
+        *The vehicle trade-in value you have entered is invalid. Must contain no
+        special characters, letters, and be a positive number
+      </div>
       <input
         type="text"
         id="trade"

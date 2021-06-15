@@ -1,17 +1,26 @@
 * {
-  margin: 0;
+  margin: 2rem auto;
   padding: 0;
 }
 
 #payment_calculator {
   width: 500px;
   display: flex;
+  padding: 0.8rem;
   flex-direction: column;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.8);
 }
 
 #payment_calculator > * {
   margin: 0.3rem;
   padding: 0.5rem;
+  border-radius: 8px;
+  border: none;
+}
+
+#payment_calculator label {
+  color: #fff;
 }
 
 #payment_calculator select {
@@ -30,12 +39,22 @@
 
 #payment_calculator h2 {
   margin: 0 auto 0.8rem;
+  color: #fff;
 }
 #payment_calculator .payment_quote {
   width: 100px;
   height: 50px;
   margin: auto;
-  border: #000 2px solid;
+  border: #fff 2px solid;
+  color: #fff;
   font-weight: 700;
   font-size: 2.5rem;
+}
+
+.no_entry-message {
+  display: none;
+}
+.error-message {
+  display: none;
+  color: red;
 }
